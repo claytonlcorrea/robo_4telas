@@ -1,0 +1,77 @@
+https://www.youtube.com/embed/iyOq8DhaMYw?&autoplay=1&mute=1
+https://www.youtube.com/embed/0T9ONfRBgto?&autoplay=1&mute=1
+https://www.youtube.com/embed/l0sCwIjLGxs?&autoplay=1&mute=1
+https://www.youtube.com/embed/4VH5T4tVvt0?&autoplay=1&mute=1
+
+
+# api_key = 'AIzaSyAxU-I-anXhto-Q6knnlrHdWAkbjtzqR0Q' ### API Clayton
+# api_key = 'AIzaSyD4Y-OVxAtBUrZxulGbuIvVVbjr0fMCiUw'
+api_key = 'AIzaSyD2Rc0eouTq4xX6e5A_Rqu38s8BxzZWBBg' # you have exceeded your quota at 30/09/24
+
+
+html:
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos telao Laatus</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
+            grid-template-rows: repeat(2, 1fr);    /* 2 linhas de tamanho igual */
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .video-grid iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-grid">
+        <!-- Vídeo A1 -->
+        <iframe src="https://www.youtube.com/embed/iyOq8DhaMYw?&autoplay=1&mute=1" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+
+        <!-- Vídeo A2 -->
+        <iframe src="https://www.youtube.com/embed/0T9ONfRBgto?&autoplay=1&mute=1" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+
+        <!-- Vídeo B1 -->
+        <iframe src="https://www.youtube.com/embed/l0sCwIjLGxs?&autoplay=1&mute=1" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+
+        <!-- Vídeo B2 -->
+        <video width="100%" height="100%" controls autoplay muted loop style="object-fit: cover;">
+            <source src="intro-INDICADORES.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</body>
+</html>

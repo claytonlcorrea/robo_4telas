@@ -1,0 +1,92 @@
+
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Telao Laatus</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html, body {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .video-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 512px); /* 2 colunas com largura de 512px */
+                grid-template-rows: repeat(4, 256px);    /* 4 linhas com altura de 256px */
+                gap: 1px; /* Espaço entre os vídeos */
+            }
+
+            .video-grid iframe,
+            .video-grid video {
+                width: 512px;   /* Largura fixa de 512px */
+                height: 256px;  /* Altura fixa de 256px */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="video-grid">
+            <!-- Bloomberg -->
+            <iframe src="https://www.youtube.com/embed/iyOq8DhaMYw?&autoplay=1&mute=1" 
+                    title="YouTube live video 1" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+
+            <!-- CNN -->
+            <iframe src="https://www.youtube.com/embed/NkDPo-cj4wE?&autoplay=1&mute=1" 
+                    title="YouTube live video 2" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+
+            <!-- TC News -->
+            <iframe src="https://www.youtube.com/embed/9p8JNL8Y99I?&autoplay=1&mute=1" 
+                    title="YouTube live video 3" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+
+            <!-- trailer_laatus.mp4 -->
+            <video controls autoplay muted loop style="object-fit: cover;">
+                <source src="intro-INDICADORES.mp4" type="video/mp4">
+            </video>
+            
+            <!-- Bloomberg (repetido) -->
+            <iframe src="https://www.youtube.com/embed/iyOq8DhaMYw?&autoplay=1&mute=1" 
+                    title="YouTube live video 1" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+
+            <!-- CNN (repetido) -->
+            <iframe src="https://www.youtube.com/embed/NkDPo-cj4wE?&autoplay=1&mute=1" 
+                    title="YouTube live video 2" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+
+            <!-- TC News (repetido) -->
+            <iframe src="https://www.youtube.com/embed/9p8JNL8Y99I?&autoplay=1&mute=1" 
+                    title="YouTube live video 3" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+
+            <!-- trailer_laatus.mp4 (repetido) -->
+            <video controls autoplay muted loop style="object-fit: cover;">
+                <source src="intro-INDICADORES.mp4" type="video/mp4">
+            </video>
+        </div>
+    </body>
+    </html>
+    
